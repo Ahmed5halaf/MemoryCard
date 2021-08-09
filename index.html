@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>memory game js</title>
+</head>
+<body>
+    <div class="conatiner text-center">
+        <!-- tittle Game -->
+        <header class="head pos-absolute">
+            <h1>Engoie with <br class="hid" />The Memory Game</h1>
+            <input id="inputId" type="text" value="" placeholder="Plaese Enter Your Name?">
+            <button type="submit" class="send">Send</button>               
+        </header>
+        <!-- section pices game -->
+        <div class="bolck text-center">
+         <!-- logo Game && input && name -->
+            <div class="logo g-flex">
+                <span class="logo-img"><img src="images/logo-png.png" alt=""></span>
+                <h5></h5>
+                <div class="reset">
+                     <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+                </div>
+            </div>
+
+        <!-- ruselt game -->
+            <section class="score-panel g-flex">
+                    <!-- moves Game -->
+                <div class="moves">
+                    <span class="moves-counter">0</span>Moves<span></span>
+                </div>
+        <!-- show score Game -->
+                <div class="title-score g-flex">
+                   <h3>Score Panel</h3>
+                    <ul id="star-rating" class="star-rating">
+                        <li class="star"><i class="fa fa-star"></i></li>
+                        <li class="star"><i class="fa fa-star"></i></li>
+                        <li class="star"><i class="fa fa-star"></i></li>
+                    </ul>
+                </div>
+       <!-- time count Game -->
+                <div class="timer-conatiner">
+                    <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00 </span>
+                </div>
+            </section>
+       <!-- dispaly finsh Game -->
+        <section class="win-game-model">
+            <!-- model content -->
+            <div id="model" class="model">
+                <div class  ="model-content g-flex">
+                    <span class="close">&times;</span>
+                    <h2>Congratulations!</h2>
+                    <p>You have Won thie game and found all 8 pairs of cards.</p>
+                    <!-- <img class="model-img" src="images/Thumb-Up.jpg" alt="false"> -->
+                    <button class="btn play-again-btn">Play Again?</button>
+                </div>
+           </div>
+         </section>
+     <!-- card game form array javascript -->
+        <ul class="deck g-flex"></ul>
+        </div> <!-- end block-->
+    </div> <!-- end conatiner-->
+        <!-- audio game-->
+        <div class="audio">
+            <audio id="wrong" src="audio/gameover.wav"></audio>
+            <audio id="right" src="audio/victory.wav"></audio>
+        </div>    
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
