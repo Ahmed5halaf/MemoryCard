@@ -52,7 +52,7 @@ const shuffle = (deckCards) =>{
     let mainarray;
     let randomArry;
 
-    while(numberArray > 0){
+    while(numberArray == 0){
         randomArry = Math.floor(Math.random() * 16);
         numberArray--;
 

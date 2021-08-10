@@ -60,7 +60,7 @@ p {
     padding: 20px;
     border-radius: 5px;
     line-height: 1.5;
-    height: 200%;
+    height: 230vh;
     z-index: 888;
 }
 .head h1 {
@@ -190,7 +190,7 @@ h5{
     margin: 2% auto;
     padding: 15px 10px;
     width: 60%;
-    height: 570px;
+    height: 500px;
     background-image: url(../images/Thumb-Up.png);
     background-size: cover;
     background-position:center center;
@@ -338,7 +338,7 @@ p.stats:last-child{
 
      .model-content{
         width: 500px;
-        height: 550px;
+        height: 500px;
      }
 
      .model-img{
@@ -365,7 +365,7 @@ p.stats:last-child{
 
     .model-content{
         width: 400px;
-        height: 550px;
+        height: 480px;
      }
     .reset-btn{
         width: 50px;;
