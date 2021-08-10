@@ -251,7 +251,7 @@ p.stats:last-child{
     background: #fc4;
     border-radius: 0.5em;
     height: 200px;
-    width: 200px;
+    width: 165px;
     transform: rotateY(180deg);
 }
 
