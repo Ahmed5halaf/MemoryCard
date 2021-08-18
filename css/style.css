@@ -60,7 +60,7 @@ p {
     padding: 20px;
     border-radius: 5px;
     line-height: 1.5;
-    height: 230vh;
+    height: 170vh;
     z-index: 888;
 }
 .head h1 {
@@ -250,7 +250,7 @@ p.stats:last-child{
 .card{
     background: #fc4;
     border-radius: 0.5em;
-    height: 200px;
+    height: 165px;
     width: 165px;
     transform: rotateY(180deg);
 }
@@ -298,7 +298,16 @@ p.stats:last-child{
     }
 }
 
- @media (max-width: 1050px) {
+@media (min-width: 1440px){
+    .card{
+        width: 220px; 
+        height: 188px;
+        margin: 5px;  
+    }
+}
+
+
+ @media (max-width: 992px) {
      h5{
          width: 15em;
          height: 30px;
@@ -332,7 +341,7 @@ p.stats:last-child{
          height: 600px;
      }
      .card{
-         width: 123px;
+         width: 115px;
          height: 115px;
      }
 
@@ -345,27 +354,40 @@ p.stats:last-child{
         width: 150px;
         height: 150px;
      }
+     p:last-child{
+
+         padding-bottom: 50px;
+     }
+     p{
+         line-height: 1.6;
+     }
 
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
+    .card{
+        width: 115px;
+        height: 115px;
+    }
+}
+@media (max-width: 600px){
     .score-panel {
-        width: 330px;
         font-size: 7px;
         font-weight: bold;
     }
     .deck{
         height: 400px;
-        width: 334px;
+        width: 434px;
+        margin: 0 auto;
     }
-    .card{
-        width: 65px;
-        height: 65px;
+    .card {
+        width: 88px;
+        height: 80px;
     }
 
     .model-content{
         width: 400px;
-        height: 480px;
+        height: 450px;
      }
     .reset-btn{
         width: 50px;;
@@ -374,9 +396,7 @@ p.stats:last-child{
         width: 100px;
         height: 100px;
      }
-     .logo{
-         width:322px
-     }
+
      h2{
          font-size: 35px;
      }
@@ -388,4 +408,17 @@ p.stats:last-child{
          margin-top: 15px;
      }
 
+}
+
+@media screen and (max-width: 426px) {
+    .deck{
+        width: 336px;
+    }
+    .card{
+        width: 65px;
+        height: 65px;
+    }
+    .score-panel {
+        width: 330px;
+    }
 }
