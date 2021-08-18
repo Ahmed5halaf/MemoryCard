@@ -234,7 +234,7 @@ p.stats:last-child{
 }
 
 .deck{
-    height: 900px;
+    height: auto;
     padding: 2em;
     background: linear-gradient(to bottom, #a52a2a , #8f221a);
     border-radius: 1.5em;
@@ -250,8 +250,9 @@ p.stats:last-child{
 .card{
     background: #fc4;
     border-radius: 0.5em;
-    height: 165px;
-    width: 165px;
+    height: 210px;
+    width: 210px;
+    margin: 5px;
     transform: rotateY(180deg);
 }
 
@@ -300,14 +301,19 @@ p.stats:last-child{
 
 @media (min-width: 1440px){
     .card{
-        width: 220px; 
-        height: 188px;
+        min-width: 233px; 
+        min-height: 233px;
         margin: 5px;  
+    }
+    .model-content{
+        width: 80%;
+        height: 900px;
+        font-size: 22px;
     }
 }
 
 
- @media (max-width: 992px) {
+ @media (min-width: 992px) and (max-width: 1077px){
      h5{
          width: 15em;
          height: 30px;
@@ -338,11 +344,12 @@ p.stats:last-child{
          width: 60px;
      }
      .deck{
-         height: 600px;
+         height: auto;
      }
      .card{
-         width: 115px;
-         height: 115px;
+         width: 150px;
+         height: 150px;
+         margin: 5px;
      }
 
      .model-content{
@@ -363,14 +370,19 @@ p.stats:last-child{
      }
 
 }
-
-@media (max-width: 768px){
+@media (min-width: 926px) and (max-width: 991px){
     .card{
-        width: 115px;
-        height: 115px;
+        width: 135px;
+        height: 135px;
     }
 }
-@media (max-width: 600px){
+@media (min-width: 767px) and (max-width: 925px){
+    .card{
+        width: 110px;
+        height: 112px;
+    }
+}
+@media (min-width: 600px)and (max-width: 766px){
     .score-panel {
         font-size: 7px;
         font-weight: bold;
@@ -381,7 +393,7 @@ p.stats:last-child{
         margin: 0 auto;
     }
     .card {
-        width: 88px;
+        width: 80px;
         height: 80px;
     }
 
@@ -410,15 +422,53 @@ p.stats:last-child{
 
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 599px) {
+    .logo {
+        width: 320px;
+    }
     .deck{
         width: 336px;
     }
+    .head h1{
+        font-size: 25px;
+    }
     .card{
-        width: 65px;
+        width: 58px;
         height: 65px;
     }
     .score-panel {
         width: 330px;
+        font-size: 8px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h5 {
+       height: 25px;
+       line-height: 25px;
+       font-size: 14px;
+    }
+
+    p{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .reset-btn{
+        height: 26px;
+        padding: 7px;
+    }
+    .model-content{
+        width: 100%;
+        padding: 15px;
+        height: 460px;
+        line-height: .6;
+    }
+    .close {
+        font-size: 25px;
+    }
+
+    #inputId, .send{
+        padding: 5px;
+        font-size: 14px;
     }
 }
